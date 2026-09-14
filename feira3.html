@@ -1,0 +1,221 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Krona+One&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+
+        background: linear-gradient(
+            90deg,
+            #ff0000 0%,
+            #c400aa 35%,
+            #a200b1 65%,
+            #000000 100%
+        );
+
+        background-attachment: fixed;
+    }
+
+    /* =========================
+       MOLDURA AZUL-CLARO
+       ========================= */
+
+    .moldura {
+        position: fixed;
+        background-color: #db53e7;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .moldura-topo {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25px;
+    }
+
+    .moldura-baixo {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25px;
+    }
+
+    .moldura-esquerda {
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 100%;
+    }
+
+    .moldura-direita {
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 100%;
+    }
+
+    /* =========================
+       CONTEÚDO
+       ========================= */
+
+    .principal {
+        position: relative;
+        z-index: 1;
+
+        margin: 50px;
+        padding: 40px;
+
+        min-height: 600px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 72px;
+        color: white;
+        font-family: Arial, sans-serif;
+
+        margin: 0 0 50px 0;
+
+        text-align: center;
+    }
+
+    .segunda-principal {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 35px;
+    }
+
+    .textos {
+        width: 80%;
+        max-width: 900px;
+
+        text-align: center;
+    }
+
+    .textos p {
+        font-family: "Krona One", sans-serif;
+        font-size: 22px;
+        line-height: 1.8;
+        color: white;
+
+        text-align: center;
+    }
+
+    /* =========================
+       IMAGEM MAIOR E CENTRALIZADA
+       ========================= */
+
+    .figura {
+        display: block;
+
+        width: 600px;
+        height: 600px;
+
+        object-fit: contain;
+
+        border-radius: 10px;
+
+        margin: 0 auto;
+    }
+
+    /* =========================
+       RESPONSIVIDADE
+       ========================= */
+
+    @media (max-width: 900px) {
+
+        .principal {
+            margin: 30px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            text-align: center;
+        }
+
+        .textos {
+            width: 100%;
+        }
+
+        .figura {
+            width: 90vw;
+            max-width: 600px;
+
+            height: auto;
+            aspect-ratio: 1 / 1;
+
+            object-fit: contain;
+        }
+
+        .moldura-topo,
+        .moldura-baixo {
+            height: 15px;
+        }
+
+        .moldura-esquerda,
+        .moldura-direita {
+            width: 15px;
+        }
+    }
+
+    .botao {
+        margin: 25px;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+
+    }
+</style>
+
+
+<!-- MOLDURA FIXA -->
+
+<div class="moldura moldura-topo"></div>
+<div class="moldura moldura-baixo"></div>
+<div class="moldura moldura-esquerda"></div>
+<div class="moldura moldura-direita"></div>
+
+
+<!-- CONTEÚDO -->
+
+<div class="principal">
+
+    <h1></h1>
+
+    <div class="segunda-principal">
+
+        <div class="textos">
+
+            <p> 2. Quais habilidades cognitivas podem ser desenvolvidas por meio da prática de jogos de videogame?
+            
+            </p>
+
+        </div>
+
+        <div>
+            <img src="/img/jogos3.png" alt="jogos" class="figura">
+            <a href="feira4.html"><img src="/img/images.jpg" alt="reb" class="botao"></a>
+        </div>
+
+    </div>
+
+</div>
+```
